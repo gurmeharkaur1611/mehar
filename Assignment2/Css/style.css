@@ -1,0 +1,151 @@
+body{ /*body margin and background-color changed */
+    margin: 0; /*margin set at 0*/
+    background-color: #f8f8f8;  /*white color background*/
+}
+
+h1,h2,h3,h4,h6{  /*heading tags having same font family with text align in center*/
+    font-family: "Poppins", sans-serif; 
+    text-align: center;
+}
+
+a,li{
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;  /* remove line under a and li */
+    font-size: 1em;
+}
+
+
+/* our main body layout */
+body{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%; /* dividing in four columns */
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header header header header"
+        "mast mast mast mast"
+        "main main main main" /* 2columns for main and 2 for aside out of 4 */
+        "footer footer footer footer";
+}
+
+
+/* header */
+header{
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center; /* it will centre the items */
+    background-color: #009371;
+    height: 125px; /* fixed height */
+}
+header > div{
+    height: 115px;
+    width: auto;
+}
+header > div > a > img{
+    width: auto;
+    height: 100%;
+
+}
+header > nav > menu{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0px;
+}
+header > nav > menu > li > a{
+    color: #fefefe;
+}
+
+
+
+.masthead{
+    grid-area: mast;
+    grid-template-columns: 100%;
+    align-items: center;
+    text-align: center; /* it shows the text in centre */
+    background: url(https://img.freepik.com/premium-photo/slice-pizza-with-smoke-coming-out-it_942686-4178.jpg); /* background image of masthead */
+    background-size: cover; /* to cover masthead height */
+    background-position: center; /* centre the image */
+    height: 75vh; /* fixed height */
+}
+.masthead > h1{
+    color: #174903;
+    font-size: 5em; /* size of letters */
+    margin-right: 18%;
+}
+.masthead > h2{
+    color: #000000;
+    font-size: 3.5em;
+    margin-right: 30%; /* margin from right */
+}
+
+
+/* main */
+main{
+    grid-area: main;
+    display: block;
+    margin: auto;
+}
+main > section{
+    display: grid;
+    grid-template-columns: 100%;
+    padding: 2%;
+    margin-bottom: -10px;
+}
+main > section > div{
+    padding: 15px;
+    border: 1px solid black; /* Border */
+}
+main > section > div > form > input,select{
+    border-radius: 5px; /* used to curve the corners */
+    width: auto;
+    font-size: 1em;
+    line-height: 1.5; /*  will increase height of input boxes */
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #95989d;
+    margin-top: 1%; /* margin from top */
+}
+main > section > div > form > #submit{
+    background-color: #c52727;
+    display: block;
+    margin: auto;
+    color: white;
+    padding: 12px 28px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+
+
+/* asie */
+aside{
+    grid-area: aside;
+    display: grid;
+    grid-template-columns: 100%;
+}
+aside > article{
+    width: 90%;
+    height: auto;
+    margin: auto;
+}
+aside > article > img{
+    height: 250px;
+    width: 49%;
+}
+
+
+footer{
+    grid-area: footer; /* targeting footer */
+    display: grid;
+    background-color:  #009371;
+}
+footer > h6 {
+    color: #fefefe;
+    font-size:larger;
+    text-align: center;
+    margin: 20px;
+
+}

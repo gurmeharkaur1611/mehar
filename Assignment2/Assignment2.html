@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Creating Pizza Shop website.">
+        <meta name="robots" content="noindex, nofollow">
+        <title>Assignment 2 | Pizza Ordering Form</title>
+        <!-- we can add our fonts here  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <!-- here we added our CSS -->
+        <link rel="stylesheet" href="./CSS/style.css">
+    </head>
+<body lang="en"> <!--body tag open lang="en" demonstrates that language is english-->
+    <header><!--Header tag opened-->
+       <div> <!--div tag 1 open--> <!--LOGO-->
+                <a href="Assignment2.html"><img src="./Images/logo.jpg" alt="logoimage"></a> <!--Logo image using anchor tag image is present inside assignment 2 folder -images -->
+        </div><!--div tag  2 closed-->
+            <nav> <!--nav tag opened-->
+                <!--Header List-->
+                <menu><!--menu tag opened-->
+                        <li><a href="#">HOME</a></li> <!--list tag 1 -->
+                        <li><a href="#my-form">MENU</a></li><!--list tag 2 -->
+                        <li><a href="#">COMBOS</a></li><!--list tag 3 -->
+                        <li><a href="#">OFFERS</a></li><!--list tag 4 -->
+                </menu><!--menu tag closed-->
+            </nav> <!--nav tag closed-->
+    </header>  <!--Header tag closed-->
+
+       <!-- our masthead --> <!--Content that is shown above the image-->
+                    <section class="masthead"><!--section tag 1 open-->
+                    </section><!--section tag 2 closed-->
+
+     <!-- our main content -->
+     <main> <!--main tag opened-->
+        <section><!--section tag 2 opened-->
+            <h2>Enter Your Order</h2> <!--pizza data form-->
+            <div><!--div tag 2 opened-->
+                <!-- our form for getting data -->
+                <form action="somephpfile" method="post" enctype="multipart/form-data" id="my-form"><!--form action having post method having id in it-->
+                    <!-- inputs and labels for the form -->
+                    <label><b>Customer Details:</b></label> <!--label 1 asking for customer personal details-->
+                    <br><!--break tag 1-->
+                    <input type="text" name="first" placeholder="First Name" required> <!--input text field 1 asking for customer first name-->
+                    <br><!--break tag 2-->
+                    <input type="text" name="last" placeholder="Last Name" required><!--input text field 2 asking for customer last name-->
+                    <br><!--break tag 3-->
+                    <input type="tel" name="phone" placeholder="Phone number" required><!--input text field 3 asking for customer phonenumber-->
+                    <br><!--break tag 4-->
+                    <input type="email" name="email" placeholder="Email" required><!--input text field 4 asking for customer email-->
+                    <br><!--break tag 5-->
+                    <input type="text" name="address" placeholder="Address" required><!--input text field 5 asking for customer address-->
+                    <br> <!--break tag 6-->
+                    <hr><!--horizontal tag 1-->
+                    <label><b>Order Details:</b></label> <!--label 2 for order details-->
+                    <br> <!--break tag 7-->
+                    <label><b>Number of Pizza's to Order:</b></label> <!--label 3 asking customer for pizza quantity-->
+                    <br><!--break tag 8-->
+                    <input type="number" name="quantity" min="1" max="10"> <!--input text field 6 with minimum 1 value and maximum 10-->
+                    <br><!--break tag 9-->
+                    <label><b>Select the Size of Pizza:</b></label><!--label 4 asking customer for pizza size-->
+                    <br><!--break tag 10-->
+                    <!-- giving options to select one of them -->
+                    <select><!--select tag 1 , scrolling option will appear that will request customer to select one option-->
+                    <option>Small</option><!--select tag option 1-->
+                    <option>Medium</option><!--select tag option 2-->
+                    <option>Large</option><!--select tag option 3-->
+                    <option>XL</option><!--select tag option 4-->
+                    </select><!--select tag 1 closed-->
+                    <br><!--break tag 11-->
+                    <label><b>Choose Base Type:</b></label><!--label 5 giving options to customer to choose pizza base-->
+                    <br><!--break tag 12-->
+                    <input type="radio" id="Thin_Crust" name="base" value="Thin Crust"><!--input tag 7 with option 1 -->
+                    <label for="Thin_Crust">Thin Crust</label><!--Thin Curst Option -->
+                    <br><!--break tag 13-->
+                    <input type="radio" id="Multigrain" name="base" value="Multigrain"><!--input tag 8 with option 2 -->
+                    <label for="Multigrain">Regular</label><!--Multigrain Curst Option -->
+                    <br><!--break tag 14-->
+                    <label><b>Please select Toppings:</b></label><!--label 6 giving options to customer to choose pizza toppings-->
+                    <br><!--break tag 15-->
+                    <input type="checkbox" id="topping1" name="topping1" value="topping1"><!--input tag 10 which includes checboxes options-->
+                    <label for="topping1">Pepperoni</label><!--check box option 1-->
+                    <br><!--break tag 16-->
+                    <input type="checkbox" id="topping2" name="topping2" value="topping2"><!--input tag 11 which includes checboxes options-->
+                    <label for="topping2">Mushrooms</label><!--check box option 2-->
+                    <br><!--break tag 17-->
+                    <input type="checkbox" id="topping3" name="topping3" value="topping3"><!--input tag 12 which includes checboxes options-->
+                    <label for="topping3">Onions</label><!--check box option 3-->
+                    <br><!--break tag 18-->
+                    <input type="checkbox" id="topping4" name="topping4" value="topping4"><!--input tag 13 which includes checboxes options-->
+                    <label for="topping4">Olives</label><!--check box option 4-->
+                    <br><!--break tag 19-->
+                    <input type="checkbox" id="topping5" name="topping5" value="topping5"><!--input tag 14 which includes checboxes options-->
+                    <label for="topping5">Pineapple</label><!--check box option 5-->
+                    <br><!--break tag 20-->
+                    <input type="checkbox" id="topping6" name="topping6" value="topping6"><!--input tag 15 which includes checboxes options-->
+                    <label for="topping6">Chicken</label><!--check box option 6-->
+                    <br><!--break tag 21-->
+                    <input type="checkbox" id="topping7" name="topping7" value="topping7"><!--input tag 16 which includes checboxes options-->
+                    <label for="topping7">Jalapeños</label><!--check box option 7-->
+                    <br><!--break tag 22-->
+                    <label><b>Pizza Base:</b></label><!--input label 17-->
+                    <br><!--break tag 23-->
+                    <input type="radio" id="cheese1" name="cheese" value="YES"><!--Radio Options customer has to select one radio button-->
+                    <label for="cheese1">Cheese Burst</label><!--Yes radio button -->
+                    <br><!--break tag 24-->
+                    <input type="radio" id="cheese0" name="cheese" value="NO">
+                    <label for="cheese0">Hand Tossed</label><!--No radio button-->
+                    <hr><!--horizontal tag 2-->
+                    <br><!--break tag 25-->
+                    <!-- SUBMIT button -->
+                    <input id="submit" type="submit" value="PLACE ORDER" ><!--Place order button-->
+                </form><!--form tag closed-->
+            </div><!--div 2 closed-->
+        </section><!--section 2 closed-->
+    </main><!--main tag closed-->
+   
+    <!-- at last footer -->
+    <footer><!--Footer tag opened-->
+        <a href="Assignment2.html"></a>
+        <h6>Terms and conditions apply || @Copyright</h6>
+    </footer><!--Footer tag closed-->
+</body><!--body tag closed-->
+</html><!--html tag closed-->
