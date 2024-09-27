@@ -1,0 +1,115 @@
+/* Giving body a background color matching to the Background color of the Poster of the Song
+and setting the font family to Papyrus, fantasy */
+  body{
+    background-color: #142d4c;
+    font-family: Papyrus, fantasy;  }
+  
+  
+  /* Styling of Header which I would make a flex container */
+  header{
+    text-align: center;
+    background-color:#74dbc3;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    color: #142d4c;
+  }
+ 
+ /* 
+  Styling of logo image inside the header
+  Setting height, width, padding, display, and margin
+*/ 
+  header div img{
+    height: 90px;
+    width: auto;
+    padding: 5px;
+    display: block;
+    margin: auto;
+  }
+  
+
+  /* Styling of inserted IFrame */
+  .masthead iframe{
+    width: 100%;
+    height: calc(100vh - 160px - 8vh);
+    margin-top: 8%;
+  }
+  
+  /* Song Lyrics Styling of the Website */
+  
+  .main{
+    background: url(./back.png);
+    background-position: center;
+    background-size: 100% 100%;
+    padding: 2vh 5px;
+    text-align: justify;
+  }
+  
+  /* 
+  Styling of h2 element inside the main section
+  Setting text alignment, font size, font family, color, and letter spacing
+*/
+  .main h2{
+    text-align: center;
+    font-size: 4em;
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    color: #74dbc3;
+    letter-spacing: 5px;
+  }
+  
+  /* 
+  Styling of paragraph elements inside the main section
+  Setting color, margin, font size, letter spacing, word spacing, and font family
+  Also setting text alignment
+*/
+  .main div p{
+    color: #FFFFF0;
+    margin: 20px;
+    font-size: 1.5em;
+    letter-spacing: 1.4px;
+    word-spacing: 2px;
+    /* Giving a font-familt to the Paragraph */
+    font-family: Papyrus, fantasy;
+    text-align: center;
+  }
+  
+  /* 
+  Styling of the first line of each paragraph
+  Setting font weight and font size
+*/
+  .main div p::first-line{
+    font-weight: 760;
+    font-size: 1.2em;
+  }
+  
+  /* 
+  Styling of the first letter of each paragraph
+  Setting font size, font family, and text shadow
+*/
+  .main div p::first-letter{
+    font-size: 1.7em;
+    font-family: Heading;
+    text-shadow: 2px 3px 6px #74dbc3;
+  }
+  
+  
+  /* Footer styling of the Web-Page */
+  footer{
+    background-color: #74dbc3;
+    color: #142d4c;
+    padding: 5px;
+    margin-top: 1%;
+  }
+  
+  footer p{
+    text-align: center;
+  }
+  
+ 
