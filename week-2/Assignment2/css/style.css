@@ -1,0 +1,265 @@
+/* Font Face Definitions */
+@font-face {
+  font-family: "KittyKat";
+  src: url(../KittyKatt.ttf);
+}
+@font-face {
+  font-family: "Ephoris";
+  src: url(../Ephoris-Regular.ttf);
+}
+
+/* Basic Styling */
+html{
+    scroll-behavior: smooth; /* Enables smooth scrolling for anchor links */
+  }
+  
+  h1,h2,h3,h4,h5,h6{
+    font-family: "KittyKat", sans-serif;         
+  }
+  
+  p,a,li,label,figcaption,td{
+    font-family:"Ephoris", sans-serif;         
+    text-decoration: none;
+  }
+  ul,ol,menu{
+    list-style-type: none;
+  }
+  
+  /* Main Styling of The Website */
+  body{
+    grid-template-rows: auto;
+    background-color: #e40505e3;
+  }
+  
+  /* Header Styling */
+  header{
+    width: 100%;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-color: #e40505e3;
+    padding-left: 5%;
+  }
+  header div{
+    height: 80%;
+  }
+  header div img{
+    height: 100%;
+    border-radius: 4px;
+  }
+  header menu li{
+    display: inline-block;
+    font-size: 2em;
+    margin-right: 0.8em;
+  }
+  header menu li a{
+    color: #fff;
+    transition: 0.4s padding ease ;
+    line-height: 3px;
+  }
+  
+  header menu li a:hover{
+    border-bottom: 2px  white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #ff6347;
+    border-radius: 5px;
+    transition: all 0.3s;
+  }
+  
+  /* Mast Section Styling */
+  .masthead{
+    background-image: url("../img2.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+  }
+  .masthead div{
+    height: 100%;
+    padding: 0 10%;
+    padding-top: 10%;
+  }
+  
+  .masthead div h1{
+    text-transform: uppercase;
+    font-size: 4em;
+    color: #e40505e3;
+  }
+  .masthead div h1:hover{
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: all 0.3s;
+  }
+  
+  .masthead div p{
+    width: 50%;
+  }
+  
+  /* Main Styling */
+  main{
+    padding: 5% 10%;
+  }
+  
+  main section
+  {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 2em;
+  }
+  main section .image-container{
+    display: flex;
+  }
+  main section:nth-child(1) div img,
+  main section:nth-child(2) div img,
+  main section:nth-child(3) div img{
+    display: block;
+    margin: auto;
+    width: 90%;
+    height: auto;
+  }
+  main section:nth-child(1) h3,
+  main section:nth-child(2) h3,
+  main section:nth-child(3) h3{
+    font-size: 3em;
+    color: #ffffff;
+  }
+  main section h3::first-letter{
+    font-size: 3em; /* Larger font size for the first letter of headings */
+    margin-right: 5px;
+  }
+  section div p {
+    color: rgb(255, 255, 255); 
+    font-size: 30px;
+}
+  
+  /* Footer Styling */
+  footer{
+    background-color: #e40505e3;
+    color: #f8f8f8;
+    padding: 2% 15%;
+    }
+  
+  footer div a, footer div img{
+    display: block;
+    margin: auto;
+    position: absolute;
+  }
+  
+  footer section{
+    padding: 3%;
+  }
+  
+  footer p{
+    text-align: center;
+    font-size: 25px;
+  }
+  
+  footer section h2{
+    text-align: center;
+    font-size: 3em;
+    font-family: "Ephoris";
+  }
+  
+  footer section.contact-us{
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  footer section.contact-us div{
+    margin: 7px 0px;
+  }
+  /* From Styling */
+  footer .contact-form label {
+    display: block;
+    margin-bottom: 0.2em;
+  }
+  
+  footer .contact-form input,
+   textarea {
+    height: 35px;
+    width: 100%;
+    padding: 5px;
+  }
+   
+   
+  footer textarea {
+    resize: none;
+    width: 100%;
+    height: 100px;
+  }
+  
+  
+  /* Footer Button */
+  footer form .primary-btn {
+    font-size: 1.5em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 10px 10px;
+    transition: all 0.2s ease;
+    border: 1px solid white;
+    color: #f8f8f8;
+    background-color: #e40505e3;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 45%; 
+    margin-top: 20px;
+  }
+  .primary-btn:hover {
+    transform: scale(1.05); /* Slightly increase size on hover */
+}
+  
+  
+/* Tablet Media Queries */
+@media screen and (max-width:1024px) {
+  
+    header{
+      padding: 0 15px;
+    }
+  
+    .masthead div{
+      padding: 2%;
+      font-size: 0.9em;
+    }
+  }
+  /* Mobile Media Queries */
+  @media screen and (max-width:768px) {
+    header{
+      display: block;
+      height: auto;
+      padding: 40px 0;
+      text-align: center;
+    }
+    div a img{
+      height: auto;
+    }
+    .masthead{
+      height: 70vh;
+      overflow: hidden;
+    }
+    .masthead div{
+      padding: 2% 5%;
+    }
+    .masthead div h1{
+      font-size: 2em;
+    }
+    .masthead div p,div p,section p{
+      font-size: 1em;
+    }
+    main section {
+      display: flex;
+      flex-direction: column;
+    }
+    footer{
+      padding: 2% 4%;
+    }
+  }
+/* Mobile Phones Media Queries */
+@media screen and (max-width:585px) {
+    body{
+      font-size: 10px;
+    }
+  }
